@@ -1,0 +1,19 @@
+GET http://localhost:5000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluMSIsInBhc3N3b3JkIjoiYWRtaW4xIiwiaWF0IjoxNjU0NjE2MjE5fQ.si4CL1UaXy-tczPr3ieMxE0nBYD_N-YeSAsAQ55T9XA
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "userName": "tranducbo@gmail.com",
+    "password":"tranducbo"
+}
+
+###
+GET http://localhost:5000/get-rate
+Content-Type: application/json
+
+{
+    "productId":"pr1"
+}
